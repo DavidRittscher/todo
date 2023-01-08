@@ -81,7 +81,7 @@
         {/each}
     </div>
     <div />
-    <p>{remaining} Task to do</p>
+    <p class="remainingTodo">{remaining} Task to do!</p>
 </body>
 
 <style>
@@ -139,6 +139,7 @@
         padding: 0.65rem;
         float: right;
         align-self: auto;
+        margin: auto;
     }
     .delete-icon {
         display: none;
@@ -211,5 +212,9 @@
         grid-template-columns: 1em auto;
         gap: 0.5em;
         margin-top: 0.75em;
+    }
+    .remainingTodo{
+        margin-left: 50px;
+
     }
 </style>
