@@ -95,7 +95,7 @@
     }
     .title {
         font-family: system-ui, sans-serif;
-        font-size: 6.25rem;
+        font-size: 4rem;
         font-weight: bold;
         text-shadow: 0.125rem 0.125rem 0.313rem rgba(99, 99, 99, 0.75);
         text-align: center;
@@ -108,12 +108,13 @@
         padding-top: 1.5rem;
         padding-right: 1.5rem;
         padding-bottom: 1.2rem;
-        padding-left: 3.75rem;
+        padding-left:1rem;
         box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.25);
+        flex-grow:1 ;
     }
     .startNewTodo {
         padding: 0.313rem;
-        padding-right: 6.25rem;
+        padding-right: 4.5rem;
         font-family: system-ui, sans-serif;
         font-size: 1.5rem;
         background-color: #ffffff;
@@ -122,7 +123,6 @@
         border-width: 1px;
         border-color: #cccccc;
         border-radius: 3px;
-
         width: 60%; /* set the width to be 100% of the parent element */
     }
     .startNewTodo:focus {
@@ -156,6 +156,9 @@
 
     .todo-item:hover .delete-icon {
         display: inline-block;
+    }
+    .todo-item{
+        align-items: flex-start;
     }
     .dropTodo {
         padding-top: 0.313rem;
