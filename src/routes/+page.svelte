@@ -20,7 +20,7 @@
     }
 </script>
 
-<h1 class="title">To-Do List</h1>
+<h1 class="title">To-Do </h1>
 <body>
     <header class="header">
         <input
@@ -94,8 +94,9 @@
         margin: 0 auto;
     }
     .title {
+        display: inline-flexbox;
         font-family: system-ui, sans-serif;
-        font-size: 6.25rem;
+        font-size: 3rem;
         font-weight: bold;
         text-shadow: 0.125rem 0.125rem 0.313rem rgba(99, 99, 99, 0.75);
         text-align: center;
@@ -104,16 +105,15 @@
         margin-top: 6rem;
     }
     .header {
-        align-content: center;
+        
         padding-top: 1.5rem;
         padding-right: 1.5rem;
         padding-bottom: 1.2rem;
-        padding-left: 3.75rem;
+        padding-left: 1rem;
         box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.25);
     }
     .startNewTodo {
         padding: 0.313rem;
-        padding-right: 6.25rem;
         font-family: system-ui, sans-serif;
         font-size: 1.5rem;
         background-color: #ffffff;
@@ -122,8 +122,10 @@
         border-width: 1px;
         border-color: #cccccc;
         border-radius: 3px;
+        
+        display:flexbox
 
-        width: 60%; /* set the width to be 100% of the parent element */
+        
     }
     .startNewTodo:focus {
         outline-color: #4d4d4d;
@@ -136,6 +138,7 @@
         color: transparent;
     }
     .addButton {
+        display: inline-flex;
         padding: 0.65rem;
         float: right;
         align-self: auto;
@@ -152,6 +155,7 @@
         color: #cc9a9a;
         transition: color 0.4s ease-out;
         cursor: pointer;
+        
     }
 
     .todo-item:hover .delete-icon {
