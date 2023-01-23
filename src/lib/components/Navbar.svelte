@@ -91,8 +91,8 @@
     a {
         transition: text-decoration-color 0.5s 0s ease-in, all 0.5s 0s ease;
     }
-    a:visited {
-        color: var(--light);
+    a, a:visited, a:hover, a:active {
+        color: inherit;
     }
     a:hover {
         text-decoration-color: var(--light);
